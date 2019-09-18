@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block principal %}
+<title>Login</title>
+<div class="container">
+  <div class="login">
+    <h2>Iniciar Session</h2>
+    <form method="POST" action="{% url 'login' %}">
+      {% csrf_token %}
+
+      {{ form.as_p }}
+
+      <div class="Text Center">
+        <p><a href="">Recuperar contraseña</a></p>
+        <button class="btn btn-info" type="submit">Iniciar Session</button>
+        <br>
+        <a href="{% url 'registro' %}">Crear cuenta ;)</a>
+
+    </form>
+  </div>
+</div>
+{% endblock %}

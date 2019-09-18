@@ -1,0 +1,140 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	
+}
+
+header{
+	
+}
+/*
+menu de navegacion inicio
+*/
+.navegacion{
+	width: 1000px;
+	margin: 15px auto;
+
+	background: rgb(61, 117, 236);
+	
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	text-decoration: none;
+	padding: 6px 20.60px;
+	margin-left: 40px;
+}
+
+.menu li a:hover{
+	color: rgb(240, 237, 235);
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background-color: #c7d4d0;;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+	
+}
+
+.submenu li a{
+	display: block;
+	padding: 10px;
+	color: #fff;
+	background-color: #353535;
+	text-decoration: none;
+	text-align: center;
+	
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+
+}
+/*
+menu de navegacion fin
+*/
+/*
+footer inicio
+*/
+footer{
+background: rgb(61, 117, 236);
+text-align: center;
+margin:20 20 -0%;
+}
+#p1{
+	margin-top: -15px; 
+	color: #fff;	
+}
+.redesfooter{
+	float: right;
+	margin-top: -70px; 
+	padding-right: 80px; 
+}
+.redesfooter ul li{
+	position: relative;
+	display: inline-block;
+	padding:-1.5px;
+
+
+	
+}
+/*
+footer fin
+*/
+/*
+login inicio
+*/
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+.login{
+	background-color: rgb(199, 212, 208);
+	margin:30 300px;
+    
+   padding:40 40 50px; 
+
+}
+
+/*
+login fin
+*/
+.opciones{
+	float: right;
+	margin: -15 40 10px;
+}
+.opciones> ul li{
+	position: relative;
+	display: inline-block;
+}
